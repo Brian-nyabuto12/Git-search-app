@@ -1,1 +1,11 @@
-<p>search works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <form class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your github username.." name="searchName" [(ngModel)]="searchName" aria-label="search">
+                <button class="btn btn-Info btn-sm btn-success" (click = "search()") ><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+            </form>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
