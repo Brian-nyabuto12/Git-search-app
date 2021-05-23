@@ -1,1 +1,34 @@
+<div class="container">
+    <ng-progress></ng-progress>
+    <div class="row ">
+    <div class="col-md-9 text-center">
+      <app-search (getName)='searchRepos()'></app-search>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-11">
+      <div >
+        <div class="table">
+          <table class="table">
+            <tbody>
+             <tr *ngFor=" let repository of gitRepoService.searchRepo" >
+              <td>
+                <h4>
+                  <a style="text-align: center" href="{{repository.html_url}} " >{{repository.name}}</a>
+                </h4>
+                <p > Repository :
+                  <a href="{{repository.html_url}}" target="_blank">{{repository.login}}</a>
+                </p>
+                <p>Date Created : {{repository.created_at|date}}</p>
+                <p>Description : {{repository.description}}</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+    </div>
 
+  </div>
+</div>
