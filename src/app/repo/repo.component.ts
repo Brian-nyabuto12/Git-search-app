@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Repo } from '../repo';
+import { SearchServiveService } from '../search-servive.service';
 
 @Component({
   selector: 'app-repo',
@@ -7,9 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoComponent implements OnInit {
 
-  constructor() { }
+
+  repo: Repo;
+  public searchRepo: string;
+  public resultCount = 12;
+
+  searchRepos() {
+    this.searchRepo = '';
+    this.resultCount = 10;
+    this.getDataFunction();
+
+  }
+
+  constructor(public gitRepoService: SearchServiveService) { }
 
   ngOnInit(): void {
+    this.resultCount = 5;
+    this.gitRepoService.gitRepos(this.searchRepo);
+  }
+
+
+  getDataFunction() {
+    this.gitRepoService.gitRepos(this.searchRepo);
+
   }
 
 }
+
+

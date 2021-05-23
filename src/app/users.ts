@@ -1,8 +1,5 @@
 export class Users {
-    static result: any;
-    constructor(public url:string, public login:string, public html_url:string,  public location:string, 
-       public public_repos:number, public followers:number, public following:number, public avatar_url:string, public created_at:Date ){
-  
+    constructor(public name:string, public login: string, public avatar_url:string, public public_repos:number , public html_url: string,public created_at:Date, public followers:number ,public following:number){
     }
 }
 
