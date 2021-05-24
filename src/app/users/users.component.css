@@ -2,6 +2,7 @@
 table {
     border-collapse: collapse;
     width: 100%;
+    background-color:grey;
 }
 
 .my-repos p {
@@ -24,6 +25,8 @@ td a {
 p {
     text-indent: 2rem;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: large;
+    color:black;
 }
 
 .col-md-12 {
