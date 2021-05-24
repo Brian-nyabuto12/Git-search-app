@@ -1,0 +1,22 @@
+.container{
+    margin-top: 5rem;
+}
+p{
+    text-indent: 2rem;
+    font-family: fantasy;
+
+}
+.btn{
+    margin-top: 30px;
+    
+}
+.display{
+float: left;
+margin-top: 0.3rem;
+}
+.search{
+    font-size: 30px;
+    margin:0;
+    justify-content: left;
+    align-items: left;
+}
