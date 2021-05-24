@@ -36,7 +36,7 @@ export class SearchServiveService {
           avatar_url: string;
       }
 
-      const promise = new Promise<void>((resolve) => {
+      const promise = new Promise<void>((resolve, reject ) => {
           this.http.get<ApiResponse>('https://api.github.com/users/' + searchName + '?access_token=' + environment.apiUrl).toPromise().then(getResponse => {
               this.users.name = getResponse.name;
               this.users.html_url = getResponse.html_url;
@@ -47,8 +47,11 @@ export class SearchServiveService {
               this.users.followers = getResponse.followers;
               this.users.following = getResponse.following;
               resolve();
-          },);
-      });
+            }, error => {
+                reject(error);
+            });
+        });
+          
       return promise;
 
   }

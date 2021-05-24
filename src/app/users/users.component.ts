@@ -12,11 +12,10 @@ import {Users} from '../users';
 })
 
 export class UserComponent implements OnInit {
-  
     public searchMe = 'Brian-nyabuto12';
     public githubUser: string;
 
-    users: Users;
+    users: Users ;
     repo: Repo;
     public searchRepo: string;
     public resultCount = 12;
@@ -44,4 +43,4 @@ export class UserComponent implements OnInit {
         this.resultCount = 10;
 
     }
-  }
+}
