@@ -8,11 +8,7 @@ import { Users } from './users';
   providedIn: 'root'
 })
 export class SearchServiveService {
-  // gitRepos(searchRepo: string) {
-  //   throw new Error('Method not implemented.');
-  // }
-
-  // constructor() { }
+    private API_URL= environment.apiUrl;
   repo: Repo;
   users: Users;
   newRepository: any;

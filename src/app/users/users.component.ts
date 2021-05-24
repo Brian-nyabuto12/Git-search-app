@@ -12,6 +12,7 @@ import {Users} from '../users';
 })
 
 export class UserComponent implements OnInit {
+  
     public searchMe = 'Brian-nyabuto12';
     public githubUser: string;
 
