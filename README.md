@@ -1,6 +1,12 @@
-# GitSearch
+[Brian-nyabuto12](https://github.com/Brian-nyabuto12)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+## Description
+ This is Angular application that allows a user to enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. It queries from GitHub, using GitHub API
+
+## Live Page 
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.12.1.
 
 ## Development server
 
@@ -24,4 +30,32 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone ```https://github.com/Brian-nyabuto12/Quotes-app.git```
+
+* cd Git-search-app
+
+* code . or atom . based on the text editor you have.
+
+## Technologies Used
+
+* [HTML5]
+* [CSS]
+* [AngulerCLI]
+* [Bootstrap]
+* [tyscript]
+
+## Known Bugs
+* directive property does not work properly
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [brayannyabuto20@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2019 **Brian-nyabuto12
