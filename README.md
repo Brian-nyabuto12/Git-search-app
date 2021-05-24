@@ -35,7 +35,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Installation / Setup instruction
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone ```https://github.com/Brian-nyabuto12/Quotes-app.git```
+* git clone ```https://github.com/Brian-nyabuto12/Git-search-app.git```
 
 * cd Git-search-app
 
