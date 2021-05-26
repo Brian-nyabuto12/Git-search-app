@@ -6,7 +6,7 @@ import { APP_ID } from "@angular/core";
 
 export const environment = {
   production: true,
-  apiKey:   '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',
+  http:   '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',
 }
 
 /*

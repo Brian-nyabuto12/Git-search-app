@@ -40,7 +40,7 @@ export class UserComponent implements OnInit {
 
 
     searchRepos() {
-        this.searchRepo = '';
+        this.searchRepo = 'Brian-nyabuto12';
         this.resultCount = 10;
 
     }
