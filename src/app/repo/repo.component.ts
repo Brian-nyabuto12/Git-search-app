@@ -25,12 +25,12 @@ export class RepoComponent implements OnInit {
 
   ngOnInit(): void {
     this.resultCount = 5;
-    this.gitRepoService.gitRepos(this.searchRepo);
+    this.gitRepoService.gitUserRepos(this.searchRepo);
   }
 
 
   getDataFunction() {
-    this.gitRepoService.gitRepos(this.searchRepo);
+    this.gitRepoService.gitUserRepos(this.searchRepo);
 
   }
 

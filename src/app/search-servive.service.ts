@@ -33,7 +33,7 @@ export class SearchServiveService {
       }
 
       const promise = new Promise<void>((resolve, reject ) => {
-          this.http.get<ApiResponse>('https://api.github.com/users/' + searchName + '?access_token=' ).toPromise().then(getResponse => {
+          this.http.get<ApiResponse>('https://api.github.com/users/' + searchName  ).toPromise().then(getResponse => {
               this.users.name = getResponse.name;
               this.users.html_url = getResponse.html_url;
               this.users.login = getResponse.login;
@@ -60,7 +60,7 @@ export class SearchServiveService {
       }
 
       const myPromise = new Promise<void>((resolve, reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/users/' + searchMe + '/repos').toPromise().then(getRepoResponse => {
+          this.http.get<ApiResponse>('https://api.github.com/users/' + searchMe +'/repos').toPromise().then(getRepoResponse => {
               this.newRepository = getRepoResponse;
               resolve();
           }, error => {
@@ -71,23 +71,23 @@ export class SearchServiveService {
   }
 
 
-  gitRepos(searchName) {
-      interface ApiResponse {
-          items: any;
-      }
+//   gitRepos(searchName) {
+//       interface ApiResponse {
+//           items: any;
+//       }
 
-      const promise = new Promise<void>((resolve, reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ').toPromise().then(getRepoResponse => {
-              this.searchRepo = getRepoResponse.items;
+//       const promise = new Promise<void>((resolve, reject) => {
+//           this.http.get<ApiResponse>('https://api.github.com/users/' + searchName + '/repos').toPromise().then(getRepoResponse => {
+//               this.searchRepo = getRepoResponse.items;
 
-              resolve();
-          }, error => {
-              this.searchRepo = 'error';
-              reject(error);
-          });
-      });
-      return promise;
-  }
+//               resolve();
+//           }, error => {
+//               this.searchRepo = 'error';
+//               reject(error);
+//           });
+//       });
+//       return promise;
+//   }
 }
 
 
